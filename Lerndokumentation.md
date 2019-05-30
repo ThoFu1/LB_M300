@@ -1,6 +1,0 @@
-
-### Linux
-### Virtualisierung
-### Vargant
-### Systemsicherheit
-###
