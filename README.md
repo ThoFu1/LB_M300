@@ -14,7 +14,7 @@ Vagrant kann man von folgender Seite [herunterladen](https://www.vagrantup.com/)
 |up|startet eine VM|
 |box| Wird benutzt um eine Box hinzuzufügen oder zu löschen|
 |status|Zeigt den Status der VMs|
-|suspend|Fährt die VM runter|
+|halt|Fährt die VM runter|
 |ssh|Verbindet sich mit der VM via SSH|
 |provision|Neue Updates im Vagrantfile werden übernommen|
 |destroy|Löscht eine VM|
@@ -84,10 +84,3 @@ Beim Client wurde noch ein User und eine Gruppe erstellt. Der User wurde dann au
 
 ## Reflexion
 Am Anfang war es schwierig, da ich nicht genau wusste was von mir verlangt wurde. Und mit Ubuntu hatte ich auch welche Problem mit dem installieren vom Reverse-Proxy und Apache. Da ich aber immer Probleme mit Ubuntu, oder einfach Linux Distributionen, habe verlor ich einiges an Zeit diese Probleme wieder zu lösen. Schlussendlich kriegte ich es hin ein Vagrantfile zu kreieren, indem mehrere VMs waren und bei dem die richtigen Services installiert und konfiguriert werden. 
-
-
-
-
-
-
-
