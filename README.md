@@ -22,16 +22,18 @@ Vagrant kann man von folgender Seite [herunterladen](https://www.vagrantup.com/)
 ## Systemsicherheit
 Um eine deutlich sichere Umgebung für meine VMs zuschaffen, aktivierte ich die Firewall und für den Webserver würde noch der reverse-Proxy installiert und konfiguriert. 
 ### Firewall und Rerverse-Proxy
-sudo ufw enable   
-sudo ufw allow 80/tcp
 
-echo "ServerName localhost" >> /etc/apache2/apache2.conf
-sudo service apache2 restart
 
-sudo rm /etc/apache2/sites-available/000-default.conf
-sudo touch /etc/apache2/sites-available/000-default.conf
-	
-cat >> /etc/apache2/sites-available/000-default.conf<<EOL
+    sudo ufw enable   
+    sudo ufw allow 80/tcp
+
+    echo "ServerName localhost" >> /etc/apache2/apache2.conf
+    sudo service apache2 restart
+
+    sudo rm /etc/apache2/sites-available/000-default.conf
+    sudo touch /etc/apache2/sites-available/000-default.conf
+        
+    cat >> /etc/apache2/sites-available/000-default.conf<<EOL
 	<VirtualHost *:80>
             ServerAdmin webmaster@localhost
             DocumentRoot /var/www/html
@@ -60,7 +62,7 @@ cat >> /etc/apache2/sites-available/000-default.conf<<EOL
         ProxyPassReverse /master http://master
 
     </VirtualHost>
- EOL
+    EOL
 
 
 
