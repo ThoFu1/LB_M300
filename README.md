@@ -21,9 +21,9 @@ Vagrant kann man von folgender Seite [herunterladen](https://www.vagrantup.com/)
 
 ### Vagrant-Cloud
 Die Vagrant-Cloud ist die Webseite von Vagrant selbst, auf dem alle Boxen sind Unter folgendem [Link](https://app.vagrantup.com/boxes/search) findet man die Boxen. Um eine Box herunterzuladen gibt man im Git/Bash
-            vagrant init (Namen der Box)
+            "vagrant init (Namen der Box)"
 ein. Danach muss man nur noch 
-            vagrant up
+            "vagrant up"
 eingeben und die VM, mit der gewählten Box, wird gestartet.
 
 ## Systemsicherheit
