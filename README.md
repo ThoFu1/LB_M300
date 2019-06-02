@@ -19,8 +19,15 @@ Vagrant kann man von folgender Seite [herunterladen](https://www.vagrantup.com/)
 |provision|Neue Updates im Vagrantfile werden übernommen|
 |destroy|Löscht eine VM|
 
+### Vagrant-Cloud
+Die Vagrant-Cloud ist die Webseite von Vagrant selbst, auf dem alle Boxen sind Unter folgendem [Link](https://app.vagrantup.com/boxes/search) findet man die Boxen. Um eine Box herunterzuladen gibt man im Git/Bash
+        vagrant init (Namen der Box)
+ein. Danach muss man nur noch 
+        Vagrant up
+eingeben und die VM mit der gewählten Box wird gestartet.
+
 ## Systemsicherheit
-Um eine deutlich sichere Umgebung für meine VMs zuschaffen, aktivierte ich die Firewall und für den Webserver würde noch der reverse-Proxy installiert und konfiguriert. 
+Um eine deutlich sichere Umgebung für meine VMs zuschaffen, aktivierte ich die Firewall und für den Webserver würde noch der Reverse-Proxy installiert und konfiguriert. 
 ### Firewall und Rerverse-Proxy
 Folgendes wurde im .sh file vom Webserver eingefügt, um eine Firewall und Reverse-Proxy einzurichten.
 
@@ -68,7 +75,7 @@ Folgendes wurde im .sh file vom Webserver eingefügt, um eine Firewall und Rever
 Beim Client wurde noch ein User und eine Gruppe erstellt. Der User wurde dann auch  zur Gruppe hinzugefügt. 
     
     sudo useradd -m test01
-    sudo addgroup --gid 2000 standard_group
+    sudo addgroup standard_group
     sudo usermod -aG standard_group test01
 
 ## Reflexion
