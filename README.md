@@ -10,7 +10,15 @@ Vagrant kann man von folgender Seite [herunterladen](https://www.vagrantup.com/)
 ### Befehel
 |Befehl | Erklärung |
 |---|---|
-| vagrant init | Hiermit kann wir ein Vagrantfile erstellen, wenn noch keins im Ordner ist|
+|init|Hiermit wird ein Vagrantfile erstellen, wenn noch keins im Ordner ist|
+|up|startet eine VM|
+|box| Wird benutzt um eine Box hinzuzufügen oder zu löschen|
+|status|Zeigt den Status der VMs|
+|suspend|Fährt die VM runter|
+|ssh|Verbindet sich mit der VM via SSH|
+|provision|Neue Updates im Vagrantfile werden übernommen|
+|destroy|Löscht eine VM|
+
 
 
 ## Versionsverwaltung mit Git
