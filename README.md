@@ -22,7 +22,7 @@ Vagrant kann man von folgender Seite [herunterladen](https://www.vagrantup.com/)
 ## Systemsicherheit
 Um eine deutlich sichere Umgebung für meine VMs zuschaffen, aktivierte ich die Firewall und für den Webserver würde noch der reverse-Proxy installiert und konfiguriert. 
 ### Firewall und Rerverse-Proxy
-
+Folgendes wurde im .sh file vom Webserver eingefügt, um eine Firewall und Reverse-Proxy einzurichten.
 
     sudo ufw enable   
     sudo ufw allow 80/tcp
@@ -64,9 +64,14 @@ Um eine deutlich sichere Umgebung für meine VMs zuschaffen, aktivierte ich die 
     </VirtualHost>
     EOL
 
-
+### User and Groups
+Beim Client wurde noch ein User und eine Gruppe erstellt. Der User ist dann auch  zur Gruppe hinzugefügt worden. 
+    sudo useradd -m test01
+    sudo addgroup --gid 2000 standard_group
+    sudo usermod -aG standard_group test01
 
 ## Reflexion
+Am Anfang war es schwierig, da ich nicht genau wusste was von mir verlangt wurde. Und mit Ubuntu hatte ich auch welche Problem mit dem installieren vom Reverse-Proxy und Apache. Da ich aber immer Probleme mit Ubuntu, oder einfach Linux Distributionen, habe verlor ich einiges an Zeit diese Probleme wieder zu lösen. Schlussendlich kriegte ich es hin ein Vagrantfile zu kreieren, indem mehrere VMs waren und bei dem die richtigen Services installiert und konfiguriert werden. 
 
 
 
