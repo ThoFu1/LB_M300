@@ -65,7 +65,8 @@ Folgendes wurde im .sh file vom Webserver eingefügt, um eine Firewall und Rever
     EOL
 
 ### User and Groups
-Beim Client wurde noch ein User und eine Gruppe erstellt. Der User ist dann auch  zur Gruppe hinzugefügt worden. 
+Beim Client wurde noch ein User und eine Gruppe erstellt. Der User wurde dann auch  zur Gruppe hinzugefügt. 
+    
     sudo useradd -m test01
     sudo addgroup --gid 2000 standard_group
     sudo usermod -aG standard_group test01
