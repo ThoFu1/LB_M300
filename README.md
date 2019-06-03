@@ -5,7 +5,7 @@
   - [Linux](#linux)
   - [Virtualisierung](#virtualisierung)
   - [Vagrant](#vagrant)
-    - [Befehel](#befehel)
+    - [Befehle](#befehle)
     - [Vagrant-Cloud](#vagrant-cloud)
   - [Systemsicherheit](#systemsicherheit)
     - [Firewall und Rerverse-Proxy](#firewall-und-rerverse-proxy)
@@ -19,7 +19,7 @@ Eine VM aufzusetzen war kein Problem. Wir haben eigentlich im jedem Modul und au
 
 ## Vagrant
 Vagrant kann man von folgender Seite [herunterladen](https://www.vagrantup.com/).
-### Befehel
+### Befehle
 |Befehl | Erklärung |
 |---|---|
 |init|Hiermit wird ein Vagrantfile erstellen, wenn noch keins im Ordner ist|
@@ -82,11 +82,12 @@ Folgendes wurde im .sh file vom Webserver eingefügt, um eine Firewall und Rever
             </Proxy>
 
             # Weiterleitungen master
-            ProxyPass /master http://master
-            ProxyPassReverse /master http://master
+            ProxyPass /test http://localhost
+            ProxyPassReverse / http://localhost
 
         </VirtualHost>
     EOF
+    sudo service apache2 reload
 
 ### User and Groups
 Beim Client wurde noch ein User und eine Gruppe erstellt. Der User wurde dann auch  zur Gruppe hinzugefügt. 
