@@ -89,6 +89,8 @@ Folgendes wurde im .sh file vom Webserver eingefügt, um eine Firewall und Rever
     EOF
     sudo service apache2 reload
 
+Um den Reverse-Proxy zu testen
+
 ### User and Groups
 Beim Client wurde noch ein User und eine Gruppe erstellt. Der User wurde dann auch  zur Gruppe hinzugefügt. 
     

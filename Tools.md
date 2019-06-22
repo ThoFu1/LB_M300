@@ -1,5 +1,14 @@
 #Tools
-
+- [Verwendete Tools](#verwendete-tools)
+  - [Git/Bash](#gitbash)
+    - [Installation](#installation)
+  - [Github Account](#github-account)
+  - [Visual Studio Code](#visual-studio-code)
+    - [Installation](#installation-1)
+  - [Virtual Box](#virtual-box)
+    - [Installation](#installation-2)
+  - [Vagrant](#vagrant)
+    - [Installation](#installation-3)
 ## Verwendete Tools
 - Git/Bash
 - GitHub Account
@@ -37,3 +46,14 @@ Virtual Box ist eine Virtuallisierungssofware die von Oracle angeboten wird. Sie
 1. Der Installer von Virtual Box lässt sich [hier](https://www.virtualbox.org/) herunterladen.
 2. Führe die Installation ohne spezielle Anpassungen aus
 3. Starte Virtual Box und erstelle deine erste VM
+
+### Vagrant
+Vagrant ist eine freie Software-Anwendung zum Erstellen und Verwalten von virtuellen Maschinen. Es ermöglicht eine einfache Softwareverteilung in der Software- und Webentwicklung. Vagrant wird auch über eine Shell gesteuert.
+
+#### Installation
+1. Gehe zur [Vagrant](https://www.vagrantup.com/) Webseite und lade das Vagrantfile herunter.
+2. Führe das File aus und folge den Installationsprozess
+3. Um es zu Testen:
+   1. Starte Git Bash
+   2. Gib "vagrant init ubuntu/xenial64" ein
+   3. "Vagrant up" um die virtuelle Maschine zu starten
