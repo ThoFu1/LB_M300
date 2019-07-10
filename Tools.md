@@ -1,14 +1,15 @@
-#Tools
-- [Verwendete Tools](#verwendete-tools)
-  - [Git/Bash](#gitbash)
-    - [Installation](#installation)
-  - [Github Account](#github-account)
-  - [Visual Studio Code](#visual-studio-code)
-    - [Installation](#installation-1)
-  - [Virtual Box](#virtual-box)
-    - [Installation](#installation-2)
-  - [Vagrant](#vagrant)
-    - [Installation](#installation-3)
+# Tools
+- [Tools](#Tools)
+  - [Verwendete Tools](#Verwendete-Tools)
+    - [Git/Bash](#GitBash)
+      - [Installation](#Installation)
+    - [Github Account](#Github-Account)
+    - [Visual Studio Code](#Visual-Studio-Code)
+      - [Installation](#Installation-1)
+    - [Virtual Box](#Virtual-Box)
+      - [Installation](#Installation-2)
+    - [Vagrant](#Vagrant)
+      - [Installation](#Installation-3)
 ## Verwendete Tools
 - Git/Bash
 - GitHub Account
